@@ -6,7 +6,7 @@ let v = new Vue({
     template: `
     <div>
         Name: <input v-model="name" type="text">
-        <hello-component :name="name" :initialEnthusiasm="5" />
+        <hello-component :name="name" :initialEnthusiasm="5" :FiscalYear=2019 :theDates=[] />
     </div>
     `,
     data: { name: "Dell Fiscal Calendar" },

@@ -2,8 +2,9 @@
 <template>
     <div>
         <div class="greeting">{{name}}{{exclamationMarks}}{{fisYear}}</div>
-        <div v-for="(week,index) in thDates">
-            <div v-for="(i,index) in week">
+
+        <div v-for="weeks in thDates">
+            <div v-for="i in weeks">
                 {{i.d}}
             </div>
         </div>
@@ -39,7 +40,7 @@ export default Vue.extend({
   data() {
     return {
       enthusiasm: this.initialEnthusiasm,
-      thDates: this.theDates,
+      thDates:this.theDates,
       fisYear:this.FiscalYear
     };
   },
